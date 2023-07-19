@@ -18,11 +18,11 @@
 <meta property="article:author" content="Aunt_nuozhen">
 <meta name="twitter:card" content="summary">
 
-	<meta name="theme-color" content="#5e72e4">
-	<meta name="theme-color-rgb" content="94,114,228">
-	<meta name="theme-color-origin" content="#5e72e4">
+	<meta name="theme-color" content="#2DA6F2">
+	<meta name="theme-color-rgb" content="45,166,242">
+	<meta name="theme-color-origin" content="#2DA6F2">
 	<meta name="argon-enable-custom-theme-color" content="true">
-	<meta name="theme-card-radius" content="4">
+	<meta name="theme-card-radius" content="24">
 	<meta name="theme-version" content="1.0.2">
 	<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
@@ -70,7 +70,7 @@
 		}
 	</script>
 	<script>
-		var darkmodeAutoSwitch = "false";
+		var darkmodeAutoSwitch = "alwayson";
 		function setDarkmode(enable){
 			if (enable == true){
 				$("html").addClass("darkmode");
@@ -156,20 +156,20 @@
 <style id="themecolor_css">
 	
 	:root{
-		--themecolor: #5e72e4;
-		--themecolor-dark0: #5368E2;
-		--themecolor-dark: #485FE0;
-		--themecolor-dark2: #324CDD;
-		--themecolor-dark3: #233DD2;
-		--themecolor-light: #8A98EB;
-		--themecolor-rgbstr: 94,114,228;
+		--themecolor: #2DA6F2;
+		--themecolor-dark0: #21A1F1;
+		--themecolor-dark: #159CF1;
+		--themecolor-dark2: #0E8EDE;
+		--themecolor-dark3: #0C7EC6;
+		--themecolor-light: #5DBAF5;
+		--themecolor-rgbstr: 45,166,242;
 		--themecolor-gradient: linear-gradient(150deg,var(--themecolor-light) 15%, var(--themecolor) 70%, var(--themecolor-dark0) 94%);
 
 	}
 </style>
 <style id="theme_cardradius_css">
 	:root{
-		--card-radius: 4px;
+		--card-radius: 24px;
 	}
 </style>
 
@@ -179,10 +179,14 @@
 		<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light bg-primary headroom--not-bottom headroom--not-top headroom--pinned">
 			<div class="container">
 				
+					<a class="navbar-brand navbar-icon mr-lg-5" href="">
+						<img src="">
+					</a>
+				
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<a class="navbar-brand" href="/">Aunt Studio</a>
+				<a class="navbar-brand" href="/">Aunt Studio&#39;s Website</a>
 				<div class="navbar-collapse collapse" id="navbar_global">
 					<div class="navbar-collapse-header">
 						<div class="row">
@@ -207,7 +211,7 @@
 							<ul class='navbar-nav navbar-nav-hover align-items-lg-center'>
 								
 										<li class='nav-item'>
-											<a href='/home' class='nav-link' >
+											<a href='/' class='nav-link' >
 												<i class='ni ni-book-bookmark d-lg-none'></i>
 												<span class='nav-link-inner--text'>首页</span>
 											</a>
@@ -239,6 +243,10 @@
 						</li>
 					</ul>
 				</div>
+				
+					<a class="navbar-brand navbar-icon-mobile" href="">
+						<img src="">
+					</a>
 				
 				<div id="navbar_menu_mask" data-toggle="collapse" data-target="#navbar_global"></div>
 			</div>
@@ -287,9 +295,9 @@
 	
 	<div id="banner_container" class="banner-container container text-center">
 		
-			<div class="banner-title text-white"><span class="banner-title-inner">Aunt Studio</span>
+			<div class="banner-title text-white" data-text="Aunt Studio&#39;s Website" data-interval=""><span class="banner-title-inner">&nbsp;</span>
 		
-		</div>
+		<span class="banner-subtitle d-block">Hello World!</span></div>
 	</div>
 	
 		<style>
@@ -315,7 +323,7 @@
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			opacity: 1;
+			opacity: 0.7;
 			transition: opacity .5s ease;
 		}
 		html.darkmode #content:before{
@@ -339,7 +347,7 @@
 				transition: opacity .5s ease;
 			}
 			html.darkmode #content:after {
-				opacity: 1;
+				opacity: 0.7;
 			}
 			html.darkmode #content:before {
 				opacity: 0;
@@ -450,16 +458,25 @@
 <div id="sidebar_mask"></div>
 <aside id="leftbar" class="leftbar widget-area" role="complementary">
 		
+			<div id="leftbar_announcement" class="card bg-white shadow-sm border-0">
+				<div class="leftbar-announcement-body">
+					<div class="leftbar-announcement-title text-white">公告</div>
+					<div class="leftbar-announcement-content text-white">Welcome!</div>
+				</div>
+			</div>
+		
 		<div id="leftbar_part1" class="widget widget_search card bg-white shadow-sm border-0">
 			<div class="leftbar-banner card-body">
-				<span class="leftbar-banner-title text-white">Aunt Studio</span>
+				<span class="leftbar-banner-title text-white"></span>
 				
+				
+					<span class="leftbar-banner-subtitle text-white"></span>
 				
 			</div>
 			
 			
 				<ul id='leftbar_part1_menu' class='leftbar-menu'>
-					<li class='leftbar-menu-item'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>二级菜单</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>三级菜单</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item'><a href='/'>首页</a></li></ul></li></ul></li>
+					<li class='leftbar-menu-item'><a href='/'>首页</a></li><li class='leftbar-menu-item'><a href='/archives'>归档</a></li><li class='leftbar-menu-item leftbar-menu-item-haschildren'><a no-pjax onclick='return false;'>Aunt_nuozhen个人页</a><ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'><li class='leftbar-menu-item'><a target="_blank" rel="noopener" href='https://nuozhen.top/'>top.nuozhen.website.homepage()</a></li></ul></li>
 				</ul>
 			
 			<div class="card-body text-center leftbar-search-button">
@@ -488,7 +505,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">2</span>
+										<span class="site-state-item-count">1</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -509,15 +526,7 @@
 									<div class="site-author-links">
 										
 											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>aaa</a>
-											</div>
-										
-											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>bbb</a>
-											</div>
-										
-											<div class='site-author-links-item'>
-												<a href="/" rel='noopener' target='_blank'>ccc</a>
+												<a href="https://github.com/yangnuozhen" rel='noopener' target='_blank'>nuozhen</a>
 											</div>
 										
 									</div>
@@ -528,15 +537,11 @@
 										<ul class='site-friend-links-ul'>
 											
 												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>aaa</a>
+													<a href='https://github.com/' rel='noopener' target='_blank'>Github</a>
 												</li>
 											
 												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>bbb</a>
-												</li>
-											
-												<li class='site-friend-links-item'>
-													<a href='/' rel='noopener' target='_blank'>ccc</a>
+													<a href='https://s23.moe/' rel='noopener' target='_blank'>solstice23</a>
 												</li>
 											
 										</ul>
@@ -589,68 +594,13 @@
 	<article class="post card bg-white shadow-sm border-0 ">
 	<header class="post-header text-center">
 		
-		<a class="post-title" href="/2023/07/19/post/">post</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2023-7-19 1:13:27 | 编辑于 2023-7-19 1:13:27">2023-7-19 1:13
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
-							<span id="busuanzi_container_page_pv">
-								阅读<span id="busuanzi_value_page_pv"></span>次
-							</span>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							0 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							1 分钟
-						</div>
-					
-		</div>
-		
-	</header>
-
-	<div class="post-content">
-		
-			
-				
-			
-		
-	</div>
-
-	
-</article>
-
-
-	<article class="post card bg-white shadow-sm border-0 ">
-	<header class="post-header text-center">
-		
 		<a class="post-title" href="/2023/07/19/hello-world/">Hello World</a>
 		<div class="post-meta">
 			
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2023-7-19 0:22:14 | 编辑于 2023-7-19 0:22:14">2023-7-19 0:22
+							<time title="发布于 2023-7-19 0:22:14 | 编辑于 2023-7-19 18:40:46">2023-7-19 0:22
 							</time>
 						</div>
 					
@@ -717,6 +667,26 @@
 		
 <script src="/argontheme.js"></script>
 
+		
+			<script>
+				window.MathJax = {
+					tex: {
+						inlineMath: [["$", "$"], ["\\\\(", "\\\\)"]],
+						displayMath: [['$$','$$']],
+						processEscapes: true,
+						packages: {'[+]': ['noerrors']}
+					},
+					options: {
+						skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+						ignoreHtmlClass: 'tex2jax_ignore',
+						processHtmlClass: 'tex2jax_process'
+					},
+					loader: {
+						load: ['[tex]/noerrors']
+					}
+				};
+			</script>
+			<script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" id="MathJax-script" async></script>
 		
 		
 		
